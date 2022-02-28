@@ -65,7 +65,7 @@ public class TablesTester  {
 			runIt(wronguns);
 		} else {
 			System.out.println("All Correct!");
-			new Klaxon().playSound("/Users/jamie/eclipse-workspace/applause.wav");
+			new Klaxon().playSound("resources/applause.wav");
 		}
 	}
 
@@ -75,10 +75,10 @@ public class TablesTester  {
 		if (question.correctAnswer == answer) {
 			System.out.println("Correct!");
 			question.setIncorrect(false);
-			new Klaxon().playSound("/Users/jamie/eclipse-workspace/Glass.wav");
+			new Klaxon().playSound("resources/Glass.wav");
 		} else {
 			System.out.println("WRONG !!");
-			new Klaxon().playSound("/Users/jamie/eclipse-workspace/klaxon.wav");
+			new Klaxon().playSound("resources/klaxon.wav");
 			System.out.println("Should have said " + question.correctAnswer);
 			question.setIncorrect(true);
 		}
